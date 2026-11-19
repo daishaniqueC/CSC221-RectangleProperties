@@ -6,7 +6,7 @@ using namespace std;
 void getLengthWidth (double &length, double &width);
 double calcArea (double length, double width);
 double calcPerimeter (double length, double width);
-void displayProperties (double length, double width, double area, double perimeter);
+void displayProperties (double perimeter, double area);
 
 int main ()
 {
@@ -25,7 +25,7 @@ int main ()
 
   perimeter = calcPerimeter (length, width);
 
-  displayProperties (length, width, area, perimeter);
+  displayProperties (perimeter, area);
 
   cout << "Would you like to calculate another rectangle? (Y/N): ";
   cin >> choice;
@@ -78,12 +78,10 @@ double calcPerimeter (double length, double width)
   return perimeter;
 }
 
-// This function displays the rectangle's measurements along with its calculated area and perimeter.
-void displayProperties (double length, double width, double area, double perimeter)
+// This function displays the calculated area and perimeter.
+void displayProperties (double perimeter, double area)
 {
   cout << "Rectangle Properties" << endl;
-  cout << "Length: " << length << endl;
-  cout << "Width: " << width << endl;
-  cout << "Area: " << area << endl;
   cout << "Perimeter: " << perimeter << endl;
+  cout << "Area: " << area << endl;
 }
