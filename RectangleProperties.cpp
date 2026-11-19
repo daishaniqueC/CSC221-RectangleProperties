@@ -46,3 +46,21 @@ void getLengthWidth (double &length, double &width)
     cin >> width;
   }
 }
+
+double calcArea (double length, double width)
+{
+  double area;
+
+  area = length * width;
+
+  return area;
+}
+
+double calcPerimeter (double length, double width)
+{
+  double perimeter;
+
+  perimeter = 2 * (length + width);
+
+  return perimeter;
+}
