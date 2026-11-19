@@ -24,5 +24,25 @@ int main ()
   displayProperties (length, width, area, perimeter);
 
   return 0;
+}
 
+void getLengthWidth (double &length, double &width)
+{
+  cout << "Enter the length of the rectangle: ";
+  cin >> length;
+
+  while (length <= 0)
+  {
+    cout << "Invalid length. Enter a positive number: ";
+    cin >> length;
+  }
+
+  cout << "Enter the width of the rectangle: ";
+  cin >> width;
+
+  while (width <= 0)
+  {
+    cout << "Invalid width. Enter a positive number: ";
+    cin >> width;
+  }
 }
