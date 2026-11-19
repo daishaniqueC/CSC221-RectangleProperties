@@ -35,6 +35,8 @@ int main ()
   return 0;
 }
 
+
+// This function asks for the length and width of a rectangle and makes sure both measurements are positive numbers.
 void getLengthWidth (double &length, double &width)
 {
   cout << "Enter the length of the rectangle: ";
@@ -56,6 +58,7 @@ void getLengthWidth (double &length, double &width)
   }
 }
 
+// This function calculates and returns the area of a rectangle.
 double calcArea (double length, double width)
 {
   double area;
@@ -65,6 +68,7 @@ double calcArea (double length, double width)
   return area;
 }
 
+// This function calculates and returns the perimeter of a rectangle.
 double calcPerimeter (double length, double width)
 {
   double perimeter;
@@ -74,6 +78,7 @@ double calcPerimeter (double length, double width)
   return perimeter;
 }
 
+// This function displays the rectangle's measurements along with its calculated area and perimeter.
 void displayProperties (double length, double width, double area, double perimeter)
 {
   cout << "Rectangle Properties" << endl;
