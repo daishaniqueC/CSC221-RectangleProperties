@@ -14,6 +14,10 @@ int main ()
   double width;
   double area;
   double perimeter;
+  char choice;
+
+  do
+  {
 
   getLengthWidth (length, width);
 
@@ -22,6 +26,11 @@ int main ()
   perimeter = calcPerimeter (length, width);
 
   displayProperties (length, width, area, perimeter);
+
+  cout << "Would you like to calculate another rectangle? (Y/N): ";
+  cin >> choice;
+
+  } while (choice == 'Y' || choice == 'y');
 
   return 0;
 }
