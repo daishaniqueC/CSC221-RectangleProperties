@@ -64,3 +64,12 @@ double calcPerimeter (double length, double width)
 
   return perimeter;
 }
+
+void displayProperties (double length, double width, double area, double perimeter)
+{
+  cout << "Rectangle Properties" << endl;
+  cout << "Length: " << length << endl;
+  cout << "Width: " << width << endl;
+  cout << "Area: " << area << endl;
+  cout << "Perimeter: " << perimeter << endl;
+}
